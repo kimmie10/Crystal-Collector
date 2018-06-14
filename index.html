@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>crystal game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>CRYSTALSCOLLECTOR!</h1>
+
+        <p>You will be given a random number at the start of the game.</p>
+        <br>
+
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
+        <br>
+
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes above
+            the random number.</p>
+        <br>
+
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <br>
+
+        <p>Each time when the game starts, the game will change the values of each crystal.</p>
+        <br>
+    </div>
+
+    <h2 id="random"></h2>
+
+    <div class="container2">
+        <h2 id="wins">Wins: </h2>
+        <br>
+        <h2 id="lose">Losses: </h2>
+    </div>
+
+    <div class="container3">
+        <img src="assets/images/green_diamond_6816093.jpg" class="gem-img" id="greenDiamond" alt="green diamond; black background"
+            width="24%" height="100px">
+
+        <img src="assets/images/pearl_6822446.jpg" class="gem-img" id="pinkPearl" alt="pink glittery pearl" width="24%" height="100px">
+
+        <img src="assets/images/pink_diamond_6813250.jpg" class="gem-img" id="pinkDiamond" alt="pink diamond with shaded pink background"
+            width="24%" height="100px">
+
+        <img src="assets/images/ruby_312068.jpg" class="gem-img" id="ruby" alt="red ruby with white background" width="24%" height="100px">
+        <br>
+        <br>
+        <div id="totalScoreText">
+            <h2>Your total score is: </h2>
+            <br>
+            <p id="totalScore"></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

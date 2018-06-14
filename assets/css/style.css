@@ -1,0 +1,51 @@
+body {
+    background-image: url(../images/tileable_wood_texture.png);
+}
+
+.container {
+    background-color: cornsilk;
+    color: red;
+    margin: 50px 400px 10px 400px;
+    max-width: 500px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+#random {
+    background-color: blue;
+    color: white;
+    margin: 0px 0px 0px 400px;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 74px 100px 74px 74px;
+    font-size: 48px;
+    display: inline-block;
+    
+}
+
+.container2 {
+    background-color: black;
+    color: white;
+    margin-left: 88px;
+    max-width: 100px;
+    max-height: 100px;
+    padding: 50px 100px 50px 50px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container3 {
+    margin: 10px 400px 10px 400px;
+    max-width: 500px;
+    padding: 10px;
+    
+}
+
+#totalScoreText {
+    background-color: white;
+    font-family: monospace;
+    font-size: 30px;
+    padding: 10px 10px 50px 10px;
+    max-width: 500px;
+
+}
