@@ -12,7 +12,7 @@ let losses = 0;
 function start() {
 
     $("#random").html(randomNumber);
-    console.log(randomNumber);
+    // console.log(randomNumber);
 
     greenDiamond = Math.floor(Math.random() * 12) + 1;
     pinkPearl = Math.floor(Math.random() * 12) + 1;
@@ -28,8 +28,10 @@ function start() {
 }
 
 function reset() {
+    randomNumber = Math.floor(Math.random() * 101) + 19;
+    userClick = 0;
     $('#userClick').empty();
-    $('#totalScore').empty();
+    start();
 }
 
 
@@ -37,25 +39,24 @@ $('.gem-img').on('click', function () {
     var number = ($(this).attr("value"));
     if (userClick <= randomNumber) {
         userClick += parseInt(number);
-        console.log(userClick);
+        // console.log(userClick);
         $('#totalScore').text(userClick);
         if (userClick === randomNumber) {
             $("#wins").append(wins);
             wins++;
-            $('#wins').text(parseInt(wins));
-        } else if (userClick >= randomNumber) {
+            $('#wins').text("Wins: " + wins);
+            reset();
+        } else if (userClick > randomNumber) {
             $("#lose").append(losses);
             losses++;
-            $("#lose").text(parseInt(losses));
-
+            $("#lose").text("Losses: " + losses);
+            reset();
         }
     }
 });
 
-
-start();
-
 reset();
+start();
 
 /*set each variable to start
 I need to set a random number for the number to guess
